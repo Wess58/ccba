@@ -1,0 +1,86 @@
+{
+	"landing": {
+		"title": "PROGRESSIVE <br> SOLUTIONS FOR AFRICA",
+		"desc": "Progressive training and consultancy firm with extensive experience"
+	},
+	"about": {
+		"sectionTitle": "ABOUT US",
+		"title": "World class training and consultancy solutions for Africa",
+		"desc": "We are a progressive training and consultancy firm with extensive experience in delivering a wide range of training, advisory and bespoke solutions across Africa for a variety of clients. Our roots stem from a business environment, which gives us great insight and a deep understanding of the challenges faced by managers and leaders in today’s highly pressurized world where the demands placed on everyone to achieve results is intense.",
+		"cta": "Contact Us <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"services": {
+		"sectionTitle": "SERVICES",
+		"title": "WE DELIVER SUSTAINABLE GROWTH BY SOLVING OUR BIGGEST PEOPLE CHALLENGES",
+		"servicesStats": [
+			{
+				"iconUrl": "../../../assets/images/people-trained-icon.svg",
+				"title": "3000+",
+				"desc": "PROFESSIONALS TRAINED"
+			},
+			{
+				"iconUrl": "../../../assets/images/orgs-icon.svg",
+				"title": "300+",
+				"desc": "ORGANISATIONS"
+			},
+			{
+				"iconUrl": "../../../assets/images/reach-icon.svg",
+				"title": "28+",
+				"desc": "COUNTRIES REACHED"
+			}
+		]
+	},
+	"goalSection": {
+		"title": "CRITICAL BUSINESS DECISIONS FOR YOUR COMPANY",
+		"desc": "Center For Capacity Building Africa offers extensive and holistic trainings and certifications for both working professionals and leadership. Our goal is to improve project performance, creating leaders to deliver organizational success. We deliver the skills that drive projects, create best practices, align talent to your unique business needs and help you get ahead of disruption. We offer professional and leadership development programs that will get your talent and business where you want to go.",
+		"cta": "Contact Us <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"skillSection": {
+		"title": "UPSKILLING AND RESKILLING",
+		"desc": "At Center For Capacity Building Africa, we focus on building the right skills and behaviors, to meet your organizational goals as well as growing relationships, replicate winning behaviors at scale.",
+		"cta": "Learn More <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"whyUsSection": {
+		"sectionTitle": "WHY CCBAFRICA",
+		"title": "WE DEVELOP SIMPLE STRAIGHT FOWARD MODELS FOR YOUR BUSINESS",
+		"desc": "Every day organisations make critical business decisions without understanding the distance between where they are today and where they need to be to succeed. Benefit from well thought out models.",
+		"cta": "Sectors <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"clientsSection": {
+		"title": "OUR CLIENTS",
+		"desc": "Our esteemed clients place their unwavering trust in our services, and we invite you to do the same.",
+		"icons": [
+			"../../../assets/images/clients/1.png",
+			"../../../assets/images/clients/2.png",
+			"../../../assets/images/clients/3.png",
+			"../../../assets/images/clients/4.png",
+			"../../../assets/images/clients/8.png",
+			"../../../assets/images/clients/9.png",
+			"../../../assets/images/clients/10.png",
+			"../../../assets/images/clients/15.png",
+			"../../../assets/images/clients/16.png",
+			"../../../assets/images/clients/17.png"
+		]
+	},
+	"noCtaSection": {
+		"title": "LET US HELP YOU GET YOUR BUSINESS TO THE OPTIMUM STANDARDS"
+	},
+	"partnersSection": {
+		"title": "OUR PARTNERS",
+		"desc": "We invite you to become a part of our trusted partners network, benefiting from the excellence and dependability that has earned their trust.",
+		"icons": [
+			"../../../assets/images/partners/5.png",
+			"../../../assets/images/partners/6.png",
+			"../../../assets/images/partners/7.png",
+			"../../../assets/images/partners/11.png",
+			"../../../assets/images/partners/12.png",
+			"../../../assets/images/partners/13.png",
+			"../../../assets/images/partners/14.png"
+		]
+	},
+	"careersSection": {
+		"sectionTitle": "CAREERS",
+		"desc": "We’re looking for innovative talent to join our team. See all positions and submit your CV.",
+		"cta": "Contact Us <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	}
+}

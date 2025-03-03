@@ -1,0 +1,86 @@
+{
+	"landing": {
+		"title": "DES SOLUTIONS INNOVANTES <br> POUR L'AFRIQUE",
+		"desc": "Une entreprise innovante de formation et conseil avec une grande expérience"
+	},
+	"about": {
+		"sectionTitle": "À PROPOS DE NOUS",
+		"title": "Des solutions de conseil et formation de premier choix pour l'Afrique",
+		"desc": "Nous sommes une entreprise innovante de formation et conseil avec une grande expérience en éducation, accompagnement et solutions sur-mesure pour des clients variés dans toute l'Afrique.<br>Nous sommes issus d'un environnement professionnel, ce qui nous donne de bonnes informations, et une compréhension profonde des défis auxquels les gérants et dirigeants doivent faire face de nos jours dans un monde mettant une forte pression sur chaque individu, pour qu'il atteigne ses résultats.",
+		"cta": "Contactez-nous <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"services": {
+		"sectionTitle": "SERVICES",
+		"title": "NOUS APPORTONS UNE CROISSANCE DURABLE EN RÉSOLVANT LES PLUS GRANDS DÉFIS DE NOS COLLABORATEURS",
+		"servicesStats": [
+			{
+				"iconUrl": "../../../assets/images/people-trained-icon.svg",
+				"title": "3000+",
+				"desc": "PROFESSIONNELS FORMÉS"
+			},
+			{
+				"iconUrl": "../../../assets/images/orgs-icon.svg",
+				"title": "300+",
+				"desc": "ORGANISATIONS"
+			},
+			{
+				"iconUrl": "../../../assets/images/reach-icon.svg",
+				"title": "28+",
+				"desc": "PAYS TOUCHÉS"
+			}
+		]
+	},
+	"goalSection": {
+		"title": "DES DÉCISIONS PROFESSIONNELLES CRUCIALES POUR VOTRE ENTREPRISE",
+		"desc": "Center For Capacity Building Africa propose des formations et des certifications étendues et internationales destinées aux salariés comme aux dirigeants. Notre objectif est d'améliorer le rendement des projets, en formant des dirigeants pour mener à l'efficacité organisationnelle.<br><br>Nous apportons des savoir-faire qui orientent les projets, créent de meilleures pratiques, font correspondre les compétences aux besoins spécifiques de votre entreprise et vous aident à anticiper les perturbations. Nous proposons des programmes de développement professionnel et managérial qui mèneront vos compétences et votre entreprise où vous le souhaitez.",
+		"cta": "Contactez-nous <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"skillSection": {
+		"title": "DÉVELOPPER ET REMANIER LES COMPÉTENCES",
+		"desc": "​Au Center For Capacity Building Africa, nous donnons la priorité aux compétences et attitudes permettant d’atteindre vos objectifs organisationnels, tout en développant le relationnel, en reproduisant et adaptant les comportements qui fonctionnent.",
+		"cta": "En savoir plus <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"whyUsSection": {
+		"sectionTitle": "POURQUOI CCBAFRICA",
+		"title": "NOUS DÉVELOPPONS DES MODÈLES SIMPLES POUR VOTRE ENTREPRISE",
+		"desc": "Chaque jour des entreprises prennent des décisions de la plus haute importance sans savoir ce qu'elles doivent faire pour passer de leur état actuel à leur objectif de réussite. Profitez de modèles longuement pensés.",
+		"cta": "Domaines d'activité <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	},
+	"clientsSection": {
+		"title": "NOS CLIENTS",
+		"desc": "Nos clients de confiance placent leur confiance inébranlable dans nos services, et nous vous invitons à faire de même.",
+		"icons": [
+			"../../../assets/images/clients/1.png",
+			"../../../assets/images/clients/2.png",
+			"../../../assets/images/clients/3.png",
+			"../../../assets/images/clients/4.png",
+			"../../../assets/images/clients/8.png",
+			"../../../assets/images/clients/9.png",
+			"../../../assets/images/clients/10.png",
+			"../../../assets/images/clients/15.png",
+			"../../../assets/images/clients/16.png",
+			"../../../assets/images/clients/17.png"
+		]
+	},
+	"noCtaSection": {
+		"title": "LAISSEZ-NOUS VOUS AIDER À PERFECTIONNER VOTRE ENTREPRISE"
+	},
+	"partnersSection": {
+		"title": "NOS PARTENAIRES",
+		"desc": "Nous vous invitons à devenir membre de notre réseau de partenaires de confiance, bénéficiant de l'excellence et de la fiabilité qui ont gagné leur confiance.",
+		"icons": [
+			"../../../assets/images/partners/5.png",
+			"../../../assets/images/partners/6.png",
+			"../../../assets/images/partners/7.png",
+			"../../../assets/images/partners/11.png",
+			"../../../assets/images/partners/12.png",
+			"../../../assets/images/partners/13.png",
+			"../../../assets/images/partners/14.png"
+		]
+	},
+	"careersSection": {
+		"sectionTitle": "CARRIÈRES",
+		"desc": "Nous recherchons des personnes talentueuses et innovantes pour rejoindre notre équipe. Voir toutes les offres et envoyer votre CV.",
+		"cta": "Contactez-nous <span><i class=\"fa-solid fa-arrow-right\"></i></span>"
+	}
+}
