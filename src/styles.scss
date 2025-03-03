@@ -1,22 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./assets/css/font-montserrat.css";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
-  --tiara-primary: #18224b;
-  --tiara-secondary: #03ada6;
-  --tiara-tertiary: #81c341;
-  --tiara-other: #480045;
-  --navbar-height: 64px;
-  --white-people: #ffb6b6;
-  --black-people: #a0616a;
+  --app-primary: rgb(139, 0, 0);
 }
 html {
   scroll-behavior: smooth;
 }
 
 body {
-//   font-family: "Didact Gothic", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   scroll-behavior: smooth !important;
   overflow-x: hidden !important;
@@ -143,4 +137,81 @@ label {
   color: #80868b99 !important;
   font-size: 12px;
   font-family: "Didact Gothic", sans-serif !important;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.section-styling {
+  .content {
+    width: 420px;
+    display: block;
+    margin: 10vh auto;
+    padding: 2vh 20px;
+    position: relative;
+
+    .brdr-left {
+      height: 70%;
+      width: 2px;
+      background-color: #fff5;
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+
+    .section-title {
+      font-size: 0.9rem;
+      color: #fff;
+      display: block;
+      margin-bottom: 5vh;
+    }
+
+    .title {
+      display: block;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 5vh;
+    }
+
+    .desc {
+      display: block;
+      line-height: 1.8rem;
+      margin-bottom: 5vh;
+      color: #fff;
+      text-align: justify;
+    }
+
+    .btn-cta {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: 8px;
+    }
+  }
+
+  .bg-image {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 1390px) {
+  body {
+    zoom: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+}
+@media (max-width: 770px) {
 }

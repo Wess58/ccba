@@ -1,0 +1,43 @@
+<div class="footer" *ngIf="addressInfo" [@fadeIn]>
+	<div class="container">
+		<div class="row flag-row mb-4">
+			<div class="col-md-4" *ngFor="let address of addressInfo;index as i" [@@fadIn]>
+				<div class="card">
+					<div class="flag-holder">
+						<img [src]="address.iconUrl" alt="flag">
+					</div>
+
+					<span class="title" [innerHTML]="address.address"></span>
+					<a href="tel:+{{address.phone}}" class="phone" title="click to call">
+						<span><i class="fa-solid fa-phone"></i></span>
+						{{address.phone}}
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="email-container">
+			<span class="desc">Write to Us at</span>
+			<a href="mailto:info@ccbafrica.com" class="email" title="click to email">
+				<span><i class="fa-solid fa-envelope"></i></span>
+				info&#64;ccbafrica.com
+			</a>
+		</div>
+
+
+		<div class="links-container">
+			<ul>
+				<li class="footer-nav-item" *ngFor="let link of links;index as i"
+					[ngClass]="{'active-nav':router.url.includes(link.path)}" [@fadeIn]>
+					<a class="nav-link" [routerLink]="[link.path]">
+						{{link.title }} </a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="copyright-text">
+			<span>©{{year}} CCBA</span>
+		</div>
+	</div>
+
+</div>

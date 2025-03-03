@@ -1,0 +1,142 @@
+.navbar {
+  background-color: transparent;
+
+  .navbar-brand {
+    padding: 0;
+    img {
+      height: 55px;
+      margin-left: 20px;
+    }
+  }
+
+  .nav-item {
+    margin: 0 15px;
+
+    .nav-link {
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: "";
+        background: #fff;
+        transition: all 0.3s;
+      }
+
+      &:before {
+        left: 0px;
+        top: 0px;
+      }
+
+      &:after {
+        right: 0px;
+        bottom: 0px;
+      }
+
+      &:hover:before,
+      &:hover:after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  .active-nav-item {
+    &:before,
+    &:after {
+      opacity: 1 !important;
+      width: 100% !important;
+    }
+  }
+
+  .lang-toggler {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e1e1e1;
+    border-radius: 20px;
+    border: 2px solid #fff1;
+    overflow: hidden;
+
+    .lang-item {
+      padding: 6px 10px;
+      cursor: pointer;
+
+      .flag-icon {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        top: -1px;
+
+        img {
+          width: 20px;
+          height: auto;
+          border: 1px solid #0007;
+          border-radius: 50%;
+        }
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5f6063;
+      }
+    }
+  }
+}
+
+.active-lang {
+  background-color: rgb(196, 83, 8) !important;
+  border-radius: 20px;
+
+  img {
+    border: 1px solid #fff !important;
+  }
+
+  span {
+    color: #fff !important;
+  }
+}
+
+.hide-nav {
+  top: -200px; /* top needed to be -120px */
+}
+
+.transition {
+  transition-delay: 250ms;
+}
+
+.scrolled {
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09);
+  transition: all 0.4s ease-in-out;
+
+  .nav-link {
+    color: var(--app-primary) !important;
+    &:before,
+    &:after {
+      content: "";
+      background: var(--app-primary) !important;
+    }
+  }
+
+  .active-nav-item {
+    &:before,
+    &:after {
+      content: "";
+      background: var(--app-primary) !important;
+    }
+  }
+}

@@ -1,0 +1,415 @@
+.landing-section {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .wrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    content: "";
+    background: linear-gradient(to top, #000000 20%, #0007);
+  }
+
+  video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .container {
+    text-align: center;
+    z-index: 100;
+  }
+
+  .content {
+    display: block;
+    padding-top: 20vh;
+
+    .logo-holder {
+      display: block;
+      margin-bottom: 30px;
+
+      img {
+        width: 330px;
+        height: auto;
+      }
+    }
+    .title {
+      font-size: 60px;
+      color: #fff;
+      display: block;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .desc {
+      font-size: 20px;
+      color: #f1f1f1;
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    .arrow-holder {
+      img {
+        transform: rotate(180deg) scale(1.1);
+        width: 80px;
+        height: 55px;
+        vector-effect: non-scaling-stroke;
+        filter: contrast(0);
+      }
+    }
+  }
+}
+
+.about-section,
+.goal-section,
+.skill-section,
+.why-us-section,
+.career-section {
+  scroll-margin-top: 50px;
+
+  .content {
+    .btn-cta {
+      &:hover {
+        background-color: #fff;
+        color: var(--app-primary);
+
+        ::ng-deep span {
+          margin-left: 20px !important;
+        }
+      }
+
+      ::ng-deep span {
+        transition: all 0.3s;
+        margin-left: 10px !important;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .bg-image {
+    background-image: linear-gradient(90deg, #0003 52%, #0002),
+      url("../../../assets/images/about.jpeg");
+  }
+}
+
+// **************************************
+
+.services-section {
+  padding: 7vh 0;
+  background-color: #fff;
+
+  .container {
+    min-width: 80vw;
+  }
+
+  .brdr-left {
+    height: 70%;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    left: -20px;
+    top: 0;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+    color: #5f6063;
+    display: block;
+    margin-bottom: 5vh;
+  }
+
+  .title {
+    display: block;
+    color: #3c4043;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5vh;
+    line-height: 2.5rem;
+  }
+
+  .card {
+    border: none;
+    text-align: center;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .illust-holder {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+      margin-bottom: 2vh;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .title {
+      font-size: 1.9rem;
+      margin-bottom: 5px;
+      line-height: normal;
+    }
+
+    .desc {
+      color: #5f6063;
+    }
+  }
+}
+
+// **************************************
+
+.goal-section {
+  .content {
+    .brdr-left {
+      height: 70%;
+      width: 2px;
+      background-color: #0009;
+    }
+
+    .section-title,
+    .title,
+    .desc {
+      color: #3c4043;
+    }
+
+    .btn-cta {
+      background-color: transparent;
+      border: 2px solid #3c4043;
+      color: #3c4043;
+
+      &:hover {
+        background-color: #3c4043;
+        color: #fff;
+      }
+    }
+  }
+
+  .bg-image {
+    background-image: linear-gradient(90deg, #0003 52%, #0002),
+      url("../../../assets/images/goal-section.jpg");
+  }
+}
+
+.skill-section {
+  padding: 7vh 0;
+  background-color: #fff;
+
+  .content {
+    min-height: 60vh;
+  }
+  .bg-image {
+    background-image: linear-gradient(90deg, #0003 52%, #0002),
+      url("../../../assets/images/sectors.jpeg");
+  }
+}
+
+// **************************************
+
+.why-us-section {
+  min-height: 80vh;
+  position: relative;
+  padding: 7vh 0;
+
+  video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .container {
+    text-align: center;
+    z-index: 100;
+    min-width: 80vw;
+  }
+
+  .wrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    content: "";
+    background: linear-gradient(90deg, #0003 52%, #0002),
+      url("../../../assets/images/why-us-dots.png");
+  }
+
+  .content-wrapper {
+    background-color: #111;
+    border-radius: 24px;
+    width: 500px;
+    padding: 1vh 0 1vh 50px;
+    text-align: left;
+
+    .content {
+      margin: 5vh 0;
+
+      .btn-cta {
+        border: 2px solid #fff;
+        color: #fff;
+
+        &:hover {
+          background-color: #fff;
+          color: #3c4043;
+        }
+      }
+    }
+  }
+}
+
+// **************************************
+
+.clients-section {
+  background-color: #fff;
+  padding: 5vh 0;
+
+  .container {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+    min-width: 80vw;
+  }
+
+  .header {
+    text-align: center;
+    .title {
+      display: block;
+      color: var(--app-primary);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      max-width: 60%;
+      color: var(--app-primary);
+    }
+  }
+
+  .position-relative:hover {
+    .slide-track {
+      animation-play-state: paused;
+    }
+  }
+
+  .companies-gradient-bg {
+    height: 140px;
+    width: 120%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(
+      to right,
+      #fff 2%,
+      transparent 7%,
+      transparent 75%,
+      #fff 82%
+    );
+  }
+
+  .company-images {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .company-img {
+      width: 200px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-right: 30px;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// **************************************
+// Infinite scroll logo carousel
+// **************************************
+
+$animationSpeed: 55s;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.company-images {
+  position: relative;
+  margin: 0;
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(240px * 24);
+  }
+}
+
+// **************************************
+
+.no-cta-section {
+  background-color: var(--app-primary);
+  padding: 7vh 0;
+
+  .title {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+// **************************************
+
+.career-section {
+  .content {
+    min-height: 50vh;
+    .btn-cta {
+      border: 2px solid #fff;
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: #3c4043;
+      }
+    }
+  }
+
+  .bg-image {
+    background-image: linear-gradient(90deg, #0003, #0002),
+      url("../../../assets/images/careers.jpg");
+    background-position: 20% 0;
+  }
+}

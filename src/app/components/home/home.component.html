@@ -1,0 +1,228 @@
+<div class="container-fluid p-0" *ngIf="content?.landing" [@fadeIn]>
+	<!-- LANDING SECTION  -->
+	<div class="landing-section">
+
+		<div class="wrapper">
+			<video autoplay muted loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
+				id="myVideo" poster="../../../assets/images/landing-section-poster.jpg">
+				<source src="../../../assets/videos/landing-section.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="container">
+			<div class="content">
+
+				<div class="logo-holder">
+					<img src="../../../assets/images/ccba-white-logo.png" alt="ccba white logo">
+				</div>
+
+				<span class="title" [innerHTML]="content?.landing?.title"> </span>
+				<span class="desc" [innerHTML]="content?.landing?.desc"> </span>
+
+				<div class="arrow-holder">
+					<img src="../../../assets/images/down-arrow.svg" alt="ccba white logo" (click)="scrollToElement('about')">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ABOUT SECTION  -->
+	<div class="about-section section-styling" id="about">
+		<div class="row mx-0">
+			<div class="col-md-6" style="background-color: var(--app-primary);">
+				<div class="content">
+
+					<div class="brdr-left"></div>
+
+					<span class="section-title" [innerHTML]="content?.about?.sectionTitle"></span>
+					<span class="title" [innerHTML]="content?.about?.title"></span>
+					<span class="desc" [innerHTML]="content?.about?.desc"></span>
+					<a class="btn btn-cta" [innerHTML]="content?.about?.cta"> </a>
+				</div>
+			</div>
+			<div class="col-md-6 p-0">
+				<div class="bg-image"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- SERVICES SECTION  -->
+	<div class="services-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 position-relative">
+					<div class="brdr-left"></div>
+					<span class="section-title" [innerHTML]="content?.services?.sectionTitle"></span>
+					<span class="title" [innerHTML]="content?.services?.title"></span>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-3" *ngFor="let service of content?.services?.servicesStats;index as i">
+					<div class="card">
+						<div>
+							<div class="illust-holder">
+								<img [src]="service.iconUrl" [alt]="service.desc">
+							</div>
+							<span class="title" [innerHTML]="service.title"></span>
+							<span class="desc" [innerHTML]="service.desc"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--GOAL  SECTION  -->
+	<div class="goal-section section-styling">
+		<div class="row mx-0">
+			<div class="col-md-6" style="background-color: #e8e6e6;">
+				<div class="content">
+
+					<div class="brdr-left"></div>
+
+					<span class="title" [innerHTML]="content?.goalSection?.title"></span>
+					<span class="desc" [innerHTML]="content?.goalSection?.desc"></span>
+					<a class="btn btn-cta" [innerHTML]="content?.goalSection?.cta"> </a>
+				</div>
+			</div>
+			<div class="col-md-6 p-0">
+				<div class="bg-image"> </div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--SKILL SECTION  -->
+	<div class="skill-section section-styling">
+		<div class="row mx-0">
+			<div class="col-md-6 p-0">
+				<div class="bg-image"> </div>
+			</div>
+			<div class="col-md-6" style="background-color: var(--app-primary);">
+				<div class="content">
+
+					<div class="brdr-left"></div>
+
+					<span class="title" [innerHTML]="content?.skillSection?.title"></span>
+					<span class="desc" [innerHTML]="content?.skillSection?.desc"></span>
+					<a class="btn btn-cta" [innerHTML]="content?.skillSection?.cta"> </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- WHY US SECTION  -->
+	<div class="why-us-section section-styling">
+		<div class="wrapper">
+			<video autoplay muted loop #wuvideo (canplay)="wuvideo.play()" (loadedmetadata)="wuvideo.muted = true"
+				id="myVideo" poster="../../../assets/images/why-us-poster.jpg">
+				<source src="../../../assets/videos/why-us.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="content-wrapper">
+						<div class="content">
+
+							<div class="brdr-left"></div>
+
+							<span class="section-title" [innerHTML]="content?.whyUsSection?.sectionTitle"></span>
+							<span class="title" [innerHTML]="content?.whyUsSection?.title"></span>
+							<span class="desc" [innerHTML]="content?.whyUsSection?.desc"></span>
+							<a class="btn btn-cta" [innerHTML]="content?.whyUsSection?.cta"> </a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- OUR CLIENTS SECTION  -->
+	<div class="clients-section">
+		<div class="container">
+
+			<div class="header">
+				<span class="title" [innerHTML]="content?.clientsSection?.title"></span>
+				<span class="desc" [innerHTML]="content?.clientsSection?.desc"></span>
+			</div>
+
+			<div class="position-relative">
+				<div class="companies-gradient-bg">
+				</div>
+
+				<div class="company-images">
+					<div class="slide-track">
+
+						<div class="company-img"
+							*ngFor="let company of duplicateIcons(content?.clientsSection?.icons);index as i">
+							<img loading="lazy" [src]="company" alt="logo">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NO CTA SECTION  -->
+	<div class="no-cta-section">
+		<span class="title" [innerHTML]="content?.noCtaSection?.title"> </span>
+	</div>
+
+	<!-- OUR PARTNERS SECTION  -->
+	<div class="clients-section">
+		<div class="container">
+
+			<div class="header">
+				<span class="title" [innerHTML]="content?.partnersSection?.title"></span>
+				<span class="desc" [innerHTML]="content?.partnersSection?.desc"></span>
+			</div>
+
+			<div class="position-relative">
+				<div class="companies-gradient-bg">
+				</div>
+
+				<div class="company-images">
+					<div class="slide-track">
+
+						<div class="company-img"
+							*ngFor="let company of duplicateIcons(content.partnersSection.icons);index as i">
+							<img loading="lazy" [src]="company" alt="logo">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CAREER SECTION  -->
+	<div class="career-section section-styling">
+
+		<div class="row mx-0">
+			<div class="col-md-6 p-0">
+				<div class="bg-image"> </div>
+			</div>
+			<div class="col-md-6" style="background-color: #111;">
+				<div class="content">
+
+					<div class="brdr-left"></div>
+
+					<span class="section-title" [innerHTML]="content?.careersSection?.sectionTitle"></span>
+					<span class="title" [innerHTML]="content?.careersSection?.desc"></span>
+					<a class="btn btn-cta" [innerHTML]="content?.careersSection?.cta"> </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
