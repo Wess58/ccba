@@ -1,5 +1,10 @@
 <div class="footer" *ngIf="addressInfo" [@fadeIn]>
 	<div class="container">
+
+		<div class="logo-holder">
+			<img src="assets/images/ccba-black-logo.png" alt="logo">
+		</div>
+
 		<div class="row flag-row mb-4">
 			<div class="col-md-4" *ngFor="let address of addressInfo;index as i" [@fadeIn]>
 				<div class="card">

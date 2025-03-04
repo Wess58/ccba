@@ -41,4 +41,31 @@ export const FR_FOOTER = [
 ]
 
 
+export const EN_CONTACT_HEADER = {
+	title: "Contact Us",
+	desc: "Book a meeting today and begin your journey!"
+}
+
+export const FR_CONTACT_HEADER = {
+	title: "CONTACTEZ-NOUS",
+	desc: "Prenez rendez-vous aujourd’hui et commencer l’aventure!",
+}
+
+
+export const EN_CONTACT_FORM = {
+	title: "Talk to us",
+	fname: "First Name",
+	lname: "Last Name",
+	email: 'Email',
+	message:"Message"
+}
+
+export const FR_CONTACT_FORM = {
+	title: "Échangez avec nous",
+	fname: "Prénom",
+	lname: "Nom",
+	email: 'Email',
+	message: "Message"
+}
+
 

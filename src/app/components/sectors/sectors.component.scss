@@ -62,7 +62,13 @@
   .row {
     border-bottom: 3px solid #111;
     scroll-margin-top: 120px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
   .wrapper::after {
     // position: absolute;
     // top: 0;

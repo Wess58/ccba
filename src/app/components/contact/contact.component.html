@@ -1,1 +1,56 @@
-<p>contact works!</p>
+<div class="container-fluid p-0" *ngIf="content" [@fadeIn]>
+	<!-- LANDING SECTION  -->
+	<div class="landing-section">
+		<span class="title" [innerHTML]="content?.title"></span>
+		<span class="desc" [innerHTML]="content?.desc"></span>
+	</div>
+
+
+	<!-- FORM SECTION  -->
+	<div class="form-section section-styling">
+		<div class="row mx-0">
+			<div class="col-md-6 p-0">
+				<div class="bg-image"> </div>
+			</div>
+			<div class="col-md-6">
+				<div class="form">
+					<span class="title">{{formTitles.title}} </span>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label> {{formTitles.fname}} </label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label> {{formTitles.lname}} </label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label> {{formTitles.email}} </label>
+						<input type="text" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<label> {{formTitles.message}} </label>
+						<textarea class="form-control" cols="8"></textarea>
+					</div>
+
+
+					<button class="btn btn-send">Send</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <iframe
+		src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1258.9982509071108!2d28.044343591538336!3d-26.204502839256083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1741101965759!5m2!1sen!2sde"
+		width="800" height="400" style="border:0;" allowfullscreen="true" loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+</div>

@@ -1,0 +1,58 @@
+.landing-section {
+  background-color: var(--app-primary);
+  padding: 7vh 0;
+  text-align: center;
+
+  .title {
+    color: #fff;
+    display: block;
+    font-size: 4rem;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+  }
+
+  .desc {
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+  }
+}
+
+.form-section {
+  background-color: #edecec;
+
+  .bg-image {
+    background-image: linear-gradient(90deg, #0001 52%, #0003),
+      url("../../../assets/images/contact.jpg");
+    background-color: red;
+  }
+
+  .form {
+    width: 55%;
+    margin: 0 auto;
+    padding: 10vh 0;
+
+    .title {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #80868b;
+      margin-bottom: 5vh;
+    }
+
+    .form-group {
+      margin-bottom: 5vh;
+    }
+
+    .btn-send {
+      background-color: var(--app-primary);
+      color: #fff;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+}
+
+iframe {
+  width: 100vw;
+}
