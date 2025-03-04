@@ -1,0 +1,52 @@
+{
+	"landing": {
+		"title": "Where we work"
+	},
+	"servicesIcons": [
+		{
+			"iconUrl": "assets/images/mining-icon.svg",
+			"title": "MINING"
+		},
+		{
+			"iconUrl": "assets/images/energy-icon.svg",
+			"title": "ENERGY"
+		},
+		{
+			"iconUrl": "assets/images/healthcare-icon.svg",
+			"title": "HEALTHCARE"
+		},
+		{
+			"iconUrl": "assets/images/tech-icon.svg",
+			"title": "TECHNOLOGY"
+		}
+	],
+	"vision": {
+		"desc": "An insight into our years of experience and the holistic services we offer. We have a consortium of professionals in each sector to achieve progressive results."
+	},
+	"services": [
+		{
+			"videoUrl": "assets/videos/mining.mp4",
+			"posterUrl": "assets/images/mining-poster.jpg",
+			"sectionTitle": "MINING",
+			"title": "To be up-to-date with industry standards and technologies, your people must continually access mining industry training from expert sources. As the industry leader in comprehensive services across the mining value chain, we have years of expertise to share."
+		},
+		{
+			"videoUrl": "assets/videos/energy.mp4",
+			"posterUrl": "assets/images/energy-poster.jpg",
+			"sectionTitle": "ENERGY",
+			"title": "Our industry leading training courses cover the entire energy ecosystem, from conventional energy, to renewables. Regardless of where you are in the renewable sector, our goal is to provide our clients with future-proof professional training and development to help you lead in navigating the energy sector."
+		},
+		{
+			"videoUrl": "assets/videos/healthcare.mp4",
+			"posterUrl": "assets/images/healthcare-poster.jpg",
+			"sectionTitle": "HEALTHCARE",
+			"title": "We are aware of the pressures on healthcare professionals to constantly adapt to a rapidly changing environment. We have designed our services to help you keep up to date with the latest training practices."
+		},
+		{
+			"videoUrl": "assets/videos/tech.mp4",
+			"posterUrl": "assets/images/tech-poster.jpg",
+			"sectionTitle": "TECHNOLOGY",
+			"title": "We train and certify in skills needed to design, develop, implement, maintain, support or operate a particular technology or related application, product or service."
+		}
+	]
+}
