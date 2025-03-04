@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideHttpClient } from '@angular/common/http';
+import { PathLocationStrategy, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +31,14 @@ import { FooterComponent } from './shared/footer/footer.component';
     BrowserAnimationsModule,
   ],
   providers: [
-    provideHttpClient()
+    provideHttpClient(),
+    {
+      provide: LocationStrategy,
+      // PROD
+      // useClass: PathLocationStrategy,
+      // TEST
+      useClass: HashLocationStrategy
+    }
   ],
   bootstrap: [AppComponent]
 })
