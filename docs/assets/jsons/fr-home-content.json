@@ -14,17 +14,17 @@
 		"title": "NOUS APPORTONS UNE CROISSANCE DURABLE EN RÉSOLVANT LES PLUS GRANDS DÉFIS DE NOS COLLABORATEURS",
 		"servicesStats": [
 			{
-				"iconUrl": "../../../assets/images/people-trained-icon.svg",
+				"iconUrl": "assets/images/people-trained-icon.svg",
 				"title": "3000+",
 				"desc": "PROFESSIONNELS FORMÉS"
 			},
 			{
-				"iconUrl": "../../../assets/images/orgs-icon.svg",
+				"iconUrl": "assets/images/orgs-icon.svg",
 				"title": "300+",
 				"desc": "ORGANISATIONS"
 			},
 			{
-				"iconUrl": "../../../assets/images/reach-icon.svg",
+				"iconUrl": "assets/images/reach-icon.svg",
 				"title": "28+",
 				"desc": "PAYS TOUCHÉS"
 			}
@@ -50,16 +50,16 @@
 		"title": "NOS CLIENTS",
 		"desc": "Nos clients de confiance placent leur confiance inébranlable dans nos services, et nous vous invitons à faire de même.",
 		"icons": [
-			"../../../assets/images/clients/1.png",
-			"../../../assets/images/clients/2.png",
-			"../../../assets/images/clients/3.png",
-			"../../../assets/images/clients/4.png",
-			"../../../assets/images/clients/8.png",
-			"../../../assets/images/clients/9.png",
-			"../../../assets/images/clients/10.png",
-			"../../../assets/images/clients/15.png",
-			"../../../assets/images/clients/16.png",
-			"../../../assets/images/clients/17.png"
+			"assets/images/clients/1.png",
+			"assets/images/clients/2.png",
+			"assets/images/clients/3.png",
+			"assets/images/clients/4.png",
+			"assets/images/clients/8.png",
+			"assets/images/clients/9.png",
+			"assets/images/clients/10.png",
+			"assets/images/clients/15.png",
+			"assets/images/clients/16.png",
+			"assets/images/clients/17.png"
 		]
 	},
 	"noCtaSection": {
@@ -69,13 +69,13 @@
 		"title": "NOS PARTENAIRES",
 		"desc": "Nous vous invitons à devenir membre de notre réseau de partenaires de confiance, bénéficiant de l'excellence et de la fiabilité qui ont gagné leur confiance.",
 		"icons": [
-			"../../../assets/images/partners/5.png",
-			"../../../assets/images/partners/6.png",
-			"../../../assets/images/partners/7.png",
-			"../../../assets/images/partners/11.png",
-			"../../../assets/images/partners/12.png",
-			"../../../assets/images/partners/13.png",
-			"../../../assets/images/partners/14.png"
+			"assets/images/partners/5.png",
+			"assets/images/partners/6.png",
+			"assets/images/partners/7.png",
+			"assets/images/partners/11.png",
+			"assets/images/partners/12.png",
+			"assets/images/partners/13.png",
+			"assets/images/partners/14.png"
 		]
 	},
 	"careersSection": {

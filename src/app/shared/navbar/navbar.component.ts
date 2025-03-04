@@ -31,12 +31,12 @@ export class NavbarComponent implements OnInit {
   currentLang = 'EN';
   langFlags: any[] = [
     {
-      icon: "../../../assets/images/en-icon.png",
+      icon: "assets/images/en-icon.png",
       title: "EN",
       alt: "English"
     },
     {
-      icon: "../../../assets/images/fr-icon.png",
+      icon: "assets/images/fr-icon.png",
       title: "FR",
       alt: "French"
     }
