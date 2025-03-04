@@ -1,1 +1,51 @@
-<p>sectors works!</p>
+<div class="container-fluid p-0" *ngIf="content?.landing" [@fadeIn]>
+	<!-- LANDING SECTION  -->
+	<div class="landing-section">
+		<span class="title" [innerHTML]="content?.landing?.title"></span>
+	</div>
+
+	<!-- SERVICE ICONS SECTION  -->
+	<div class="service-icons">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-6 col-md-3" *ngFor="let icon of content?.servicesIcons;index as i" [@fadeIn]>
+					<div class="card" (click)="scrollToElement(icon.title)">
+						<div class="icon-holder">
+							<img [src]="icon.iconUrl" alt="icon">
+						</div>
+						<span class="title" [innerHTML]="icon.title"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- VISION SECTION  -->
+	<div class="vision">
+		<span class="title" [innerHTML]="content?.vision?.desc"></span>
+	</div>
+
+	<div class="services-listing-section section-styling">
+		<div class="row mx-0 mb-4" [id]="service.sectionTitle"
+			[ngClass]="{'flex-row-reverse': i%2}" *ngFor="let service of content.services;index as i" [@fadeIn]>
+			<div class="col-md-6" style="background-color: #111;">
+				<div class="content">
+
+					<div class="brdr-left"></div>
+
+					<span class="section-title" [innerHTML]="service?.sectionTitle"></span>
+					<span class="title" [innerHTML]="service?.title"></span>
+				</div>
+			</div>
+			<div class="col-md-6 position-relative p-0">
+				<video autoplay muted loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
+					id="myVideo-{{i+1}}" [poster]="service.posterUrl">
+					<source [src]="service.videoUrl" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>

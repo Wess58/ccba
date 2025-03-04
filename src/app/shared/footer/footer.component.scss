@@ -69,12 +69,15 @@
       align-items: center;
 
       li {
-        margin: 10px;
-        border-top: 2px solid #80868b;
         color: #80868b;
-        min-width: 150px;
-        padding: 10px 0;
         text-align: center;
+        margin: 10px;
+
+        a {
+          padding: 10px 0;
+          min-width: 150px;
+          border-top: 2px solid #80868b;
+        }
       }
 
       .active-nav {
@@ -85,10 +88,10 @@
     }
   }
 
-  .copyright-text{
-	border-top: 1px solid #f1f1f1;
-	padding-top: 10px;
-	text-align: center;
-	color: #80868b;
+  .copyright-text {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+    text-align: center;
+    color: #80868b;
   }
 }

@@ -1,0 +1,52 @@
+{
+	"landing": {
+		"title": "Ce que nous faisons"
+	},
+	"servicesIcons": [
+		{
+			"iconUrl": "assets/images/mining-icon.svg",
+			"title": "MINAGE"
+		},
+		{
+			"iconUrl": "assets/images/energy-icon.svg",
+			"title": "ÉNERGIE"
+		},
+		{
+			"iconUrl": "assets/images/healthcare-icon.svg",
+			"title": "SANTÉ"
+		},
+		{
+			"iconUrl": "assets/images/tech-icon.svg",
+			"title": "TECHNOLOGIE"
+		}
+	],
+	"vision": {
+		"desc": "Un aperçu de nos années d'expérience et de l'ensemble des services que nous proposons.<br>Nous disposons d'un groupe de professionnels dans chaque domaine d'activité afin d'obtenir les meilleurs résultats."
+	},
+	"services": [
+		{
+			"videoUrl": "assets/videos/mining.mp4",
+			"posterUrl": "assets/images/mining-poster.jpg",
+			"sectionTitle": "MINAGE",
+			"title": "Pour suivre les normes et technologies de l'industrie, nos professionnels doivent en permanence avoir accès à des formations d'experts sur l'industrie minière.<br>En tant que prestataire de services de premier ordre dans toute la chaîne de valeur de l'industrie minière, nous avons des années d'expérience à partager."
+		},
+		{
+			"videoUrl": "assets/videos/energy.mp4",
+			"posterUrl": "assets/images/energy-poster.jpg",
+			"sectionTitle": "ÉNERGIE",
+			"title": "Nos formations orientées sur l'industrie couvrent tout l'écosystème de l'énergie, des énergies conventionnelles, aux renouvelables.<br>Peu importe où vous en êtes dans le domaine du renouvelable, notre objectif est de fournir à nos clients une formation professionnelle et un développement durables dans le temps pour les aider à prendre de l'avance dans le secteur de l'énergie."
+		},
+		{
+			"videoUrl": "assets/videos/healthcare.mp4",
+			"posterUrl": "assets/images/healthcare-poster.jpg",
+			"sectionTitle": "SANTÉ",
+			"title": "Nous sommes conscients des pressions exercées sur les professionnels de santé qui doivent en permanence s'adapter à un environnement évoluant à toute vitesse.<br>Nous avons conçu nos services pour vous aider à rester à jour avec des formations sur les dernières pratiques."
+		},
+		{
+			"videoUrl": "assets/videos/tech.mp4",
+			"posterUrl": "assets/images/tech-poster.jpg",
+			"sectionTitle": "TECHNOLOGIE",
+			"title": "Nous formons et offrons des certifications pour les savoir-faire nécessaires à la conception, au développement, à l'implémentation, à la maintenance, au support et au fonctionnement d'une technologie spécifique ou de son application, d'un produit ou d'un service."
+		}
+	]
+}

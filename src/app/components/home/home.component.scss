@@ -62,6 +62,7 @@
         height: 55px;
         vector-effect: non-scaling-stroke;
         filter: contrast(0);
+		cursor: pointer;
       }
     }
   }
@@ -200,6 +201,8 @@
       url("../../../assets/images/goal-section.jpg");
   }
 }
+
+// **************************************
 
 .skill-section {
   padding: 7vh 0;

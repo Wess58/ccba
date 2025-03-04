@@ -32,15 +32,14 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     window.scrollTo({ top: 1, behavior: "smooth" });
     this.checkIfRouteIsEmpty();
-   
+
 
     this.currentLang = localStorage.getItem('lang') ?? 'EN';
     this.content = this.currentLang === 'EN' ? contentEN : contentFR;
 
   }
 
-
-  checkIfRouteIsEmpty():void{
+  checkIfRouteIsEmpty(): void {
     if (this.router.url.length === 1) {
       this.router.navigate(['/home'], {
         relativeTo: this.activatedRoute,
@@ -52,16 +51,13 @@ export class HomeComponent implements OnInit {
     }
   }
 
-
   duplicateIcons(icons: any[]): any {
     return [...icons, ...icons];
   }
-
 
   scrollToElement(id: string): void {
     const element = document.getElementById(id) as HTMLElement;
     element?.scrollIntoView({ block: "start", behavior: "smooth" });
   }
-
 
 }

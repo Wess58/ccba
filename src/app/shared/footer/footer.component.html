@@ -1,7 +1,7 @@
 <div class="footer" *ngIf="addressInfo" [@fadeIn]>
 	<div class="container">
 		<div class="row flag-row mb-4">
-			<div class="col-md-4" *ngFor="let address of addressInfo;index as i" [@@fadIn]>
+			<div class="col-md-4" *ngFor="let address of addressInfo;index as i" [@fadeIn]>
 				<div class="card">
 					<div class="flag-holder">
 						<img [src]="address.iconUrl" alt="flag">
@@ -27,10 +27,11 @@
 
 		<div class="links-container">
 			<ul>
-				<li class="footer-nav-item" *ngFor="let link of links;index as i"
-					[ngClass]="{'active-nav':router.url.includes(link.path)}" [@fadeIn]>
-					<a class="nav-link" [routerLink]="[link.path]">
-						{{link.title }} </a>
+				<li class="footer-nav-item" *ngFor="let link of links;index as i">
+					<a class="nav-link" [routerLink]="[link.path]"
+						[ngClass]="{'active-nav':router.url.includes(link.path)}" [@fadeIn]>
+						{{link.title }}
+					</a>
 				</li>
 			</ul>
 		</div>

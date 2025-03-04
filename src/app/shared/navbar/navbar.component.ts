@@ -47,9 +47,9 @@ export class NavbarComponent implements OnInit {
     // console.log($event);
     // console.log("scrolling", window.pageYOffset);
     if (window.innerWidth > 770 && (window.pageYOffset / window.innerHeight * 100) > 100) {
-      const currentScrollPos = window.pageYOffset;
-      this.showNavbarOnScroll = this.prevScrollPos > currentScrollPos;
-      this.prevScrollPos = currentScrollPos;
+      // const currentScrollPos = window.pageYOffset;
+      // this.showNavbarOnScroll = this.prevScrollPos > currentScrollPos;
+      // this.prevScrollPos = currentScrollPos;
     } else {
       this.showNavbarOnScroll = true;
     }
