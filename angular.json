@@ -9,6 +9,12 @@
         "@schematics/angular:component": {
           "style": "scss",
           "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -18,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "./",
+            "outputPath": "dist/ccba",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
