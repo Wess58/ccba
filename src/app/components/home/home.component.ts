@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import contentEN from "../../../assets/jsons/en-home-content.json";
 import contentFR from "../../../assets/jsons/fr-home-content.json";
@@ -23,14 +24,32 @@ export class HomeComponent implements OnInit {
   content: any = contentEN;
   currentLang = 'EN';
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    public router: Router,
+  ) { }
 
   ngOnInit(): void {
     window.scrollTo({ top: 1, behavior: "smooth" });
+    this.checkIfRouteIsEmpty();
+   
 
     this.currentLang = localStorage.getItem('lang') ?? 'EN';
     this.content = this.currentLang === 'EN' ? contentEN : contentFR;
 
+  }
+
+
+  checkIfRouteIsEmpty():void{
+    if (this.router.url.length === 1) {
+      this.router.navigate(['/home'], {
+        relativeTo: this.activatedRoute,
+        queryParams: {
+          // search: this.searchTerm.trim(),
+        },
+        queryParamsHandling: 'merge',
+      });
+    }
   }
 
 
@@ -39,7 +58,7 @@ export class HomeComponent implements OnInit {
   }
 
 
-  scrollToElement(id:string): void {
+  scrollToElement(id: string): void {
     const element = document.getElementById(id) as HTMLElement;
     element?.scrollIntoView({ block: "start", behavior: "smooth" });
   }
