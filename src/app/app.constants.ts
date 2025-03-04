@@ -35,7 +35,7 @@ export const FR_FOOTER = [
 	},
 	{
 		iconUrl: 'assets/images/ke-flag.svg',
-		address: 'Ikigaï Nairobi (Westlands) < br> General Mathenge Drive, <br> Nairobi, Kenya',
+		address: 'Ikigaï Nairobi (Westlands) <br> General Mathenge Drive, <br> Nairobi, Kenya',
 		phone: '+254 731 114 532'
 	}
 ]
