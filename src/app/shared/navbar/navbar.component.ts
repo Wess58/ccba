@@ -46,7 +46,7 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any) {
     // console.log($event);
     // console.log("scrolling", window.pageYOffset);
-    if (window.innerWidth > 770 && (window.pageYOffset / window.innerHeight * 100) > 100) {
+    if (window.innerWidth > 900 && (window.pageYOffset / window.innerHeight * 100) > 100) {
       // const currentScrollPos = window.pageYOffset;
       // this.showNavbarOnScroll = this.prevScrollPos > currentScrollPos;
       // this.prevScrollPos = currentScrollPos;
@@ -54,7 +54,7 @@ export class NavbarComponent implements OnInit {
       this.showNavbarOnScroll = true;
     }
 
-    this.morphNavbar = window.innerWidth > 770 ? (window.pageYOffset / window.innerHeight * 100) > 40 : true;
+    this.morphNavbar = window.innerWidth > 900 ? (window.pageYOffset / window.innerHeight * 100) > 40 : true;
   }
 
   constructor(
@@ -91,5 +91,8 @@ export class NavbarComponent implements OnInit {
     }, 10);
   }
 
+  toggleIcon(): void {
+    this.changeIcon = !this.changeIcon;
+  }
 
 }

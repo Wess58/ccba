@@ -88,14 +88,6 @@
 }
 
 @media (max-width: 900px) {
-}
-@media (max-width: 770px) {
-  .landing-section {
-    .title {
-      font-size: 2.5rem;
-    }
-  }
-
   .service-icons {
     .card {
       margin-bottom: 5vh;
@@ -128,7 +120,15 @@
 
     video {
       min-height: auto;
-      height: 200px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .landing-section {
+    .title {
+      font-size: 2rem;
     }
   }
 }

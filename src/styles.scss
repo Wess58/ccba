@@ -216,21 +216,27 @@ label {
 }
 
 @media (max-width: 900px) {
+  .section-styling {
+    .content {
+      width: 90%;
+      min-height: auto !important;
+      padding: 2vh 0 2vh 10px;
+    }
+
+    .brdr-left {
+      left: -10px !important;
+    }
+
+    .bg-image {
+      height: 300px;
+      // background-attachment: fixed;
+    }
+  }
 }
 @media (max-width: 770px) {
   .section-styling {
     .content {
       width: 90vw;
-      padding: 2vh 0 2vh 10px;
-      
-    }
-    .brdr-left {
-      left: -15px !important;
-    }
-
-    .bg-image{
-      height: 250px;
-      // background-attachment: fixed;
     }
   }
 }

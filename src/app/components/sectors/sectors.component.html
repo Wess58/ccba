@@ -28,7 +28,7 @@
 	<div class="services-listing-section section-styling">
 		<div class="row mx-0" [id]="service.sectionTitle" [ngClass]="{'flex-md-row-reverse': i%2}"
 			*ngFor="let service of content.services;index as i" [@fadeIn]>
-			<div class="col-md-6" style="background-color: #111;">
+			<div class="col-md-12 col-lg-6" style="background-color: #111;">
 				<div class="content">
 
 					<div class="brdr-left"></div>
@@ -37,7 +37,7 @@
 					<span class="title" [innerHTML]="service?.title"></span>
 				</div>
 			</div>
-			<div class="col-md-6 position-relative p-0">
+			<div class="col-md-12 col-lg-6 position-relative p-0">
 				<video autoplay muted loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
 					id="myVideo-{{i+1}}" [poster]="service.posterUrl">
 					<source [src]="service.videoUrl" type="video/mp4">

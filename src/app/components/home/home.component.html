@@ -30,7 +30,7 @@
 	<!-- ABOUT SECTION  -->
 	<div class="about-section section-styling" id="about">
 		<div class="row mx-0">
-			<div class="col-md-6" style="background-color: var(--app-primary);">
+			<div class="col-md-12 col-lg-6" style="background-color: var(--app-primary);">
 				<div class="content">
 
 					<div class="brdr-left"></div>
@@ -41,7 +41,7 @@
 					<a class="btn btn-cta" [routerLink]="'/contact'" [innerHTML]="content?.about?.cta"> </a>
 				</div>
 			</div>
-			<div class="col-md-6 p-0">
+			<div class="col-md-12 col-lg-6 p-0">
 				<div class="bg-image"> </div>
 			</div>
 		</div>
@@ -52,13 +52,14 @@
 	<div class="services-section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-10 col-md-2 position-relative">
+				<div class="col-10 col-md-12 col-lg-2 position-relative">
 					<div class="brdr-left"></div>
 					<span class="section-title" [innerHTML]="content?.services?.sectionTitle"></span>
 					<span class="title" [innerHTML]="content?.services?.title"></span>
 				</div>
-				<div class="col-md-1"></div>
-				<div class="col-6 col-md-3" *ngFor="let service of content?.services?.servicesStats;index as i">
+				<div class="col-md-0 col-lg-1"></div>
+				<div class="col-6 col-md-4 col-lg-3"
+					*ngFor="let service of content?.services?.servicesStats;index as i">
 					<div class="card">
 						<div>
 							<div class="illust-holder">
@@ -77,7 +78,7 @@
 	<!--GOAL  SECTION  -->
 	<div class="goal-section section-styling">
 		<div class="row mx-0">
-			<div class="col-md-6" style="background-color: #e8e6e6;">
+			<div class="col-md-12 col-lg-6" style="background-color: #e8e6e6;">
 				<div class="content">
 
 					<div class="brdr-left"></div>
@@ -87,7 +88,7 @@
 					<a class="btn btn-cta" [routerLink]="'/contact'" [innerHTML]="content?.goalSection?.cta"> </a>
 				</div>
 			</div>
-			<div class="col-md-6 p-0">
+			<div class="col-md-12 col-lg-6 p-0">
 				<div class="bg-image"> </div>
 			</div>
 		</div>
@@ -97,10 +98,10 @@
 	<!--SKILL SECTION  -->
 	<div class="skill-section section-styling">
 		<div class="row mx-0">
-			<div class="col-md-6 p-0 order-1 order-md-0">
+			<div class="col-md-12 col-lg-6 p-0 order-md-1 order-lg-0">
 				<div class="bg-image"> </div>
 			</div>
-			<div class="col-md-6 order-0 order-md-1" style="background-color: var(--app-primary);">
+			<div class="col-md-12 col-lg-6 order-md-0 order-lg-1" style="background-color: var(--app-primary);">
 				<div class="content">
 
 					<div class="brdr-left"></div>
@@ -135,7 +136,8 @@
 							<span class="section-title" [innerHTML]="content?.whyUsSection?.sectionTitle"></span>
 							<span class="title" [innerHTML]="content?.whyUsSection?.title"></span>
 							<span class="desc" [innerHTML]="content?.whyUsSection?.desc"></span>
-							<a class="btn btn-cta" [routerLink]="'/sectors'" [innerHTML]="content?.whyUsSection?.cta"> </a>
+							<a class="btn btn-cta" [routerLink]="'/sectors'" [innerHTML]="content?.whyUsSection?.cta">
+							</a>
 
 						</div>
 					</div>
@@ -209,10 +211,10 @@
 	<div class="career-section section-styling">
 
 		<div class="row mx-0">
-			<div class="col-md-6 p-0">
+			<div class="col-md-12 col-lg-6 p-0">
 				<div class="bg-image"> </div>
 			</div>
-			<div class="col-md-6" style="background-color: #111;">
+			<div class="col-md-12 col-lg-6" style="background-color: #111;">
 				<div class="content">
 
 					<div class="brdr-left"></div>

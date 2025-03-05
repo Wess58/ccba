@@ -103,3 +103,15 @@
     color: #80868b;
   }
 }
+
+@media (max-width: 770px) {
+  .flag-row {
+    .title {
+      font-weight: 500;
+      display: block;
+	  font-size: 0.9rem;
+      min-height: 80px;
+      color: #5f6063;
+    }
+  }
+}

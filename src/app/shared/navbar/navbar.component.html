@@ -1,13 +1,17 @@
-<nav class="navbar navbar-expand-lg fixed-top"
+<nav class="navbar navbar-expand-md fixed-top pb-0"
 	[ngClass]="{'hide-nav':!showNavbarOnScroll,'transition':showNavbarOnScroll,'scrolled':morphNavbar}">
 	<div class="container-fluid">
 		<a class="navbar-brand" [routerLink]="'/home'" *ngIf="morphNavbar" [@fadeIn]>
 			<img src="assets/images/ccba-black-logo.png" alt="logo">
 		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+
+		<button class="navbar-toggler d-block d-md-none" type="button" (click)="toggleIcon()">
+			<span>
+				<i class="fas" [ngClass]="changeIcon ? 'fa-times' : 'fa-bars' " id="menuIcon" [@fadeIn]></i>
+				<!-- <i class="fas fa-times" id="menuIcon" *ngIf="changeIcon" [@fadeIn]></i> -->
+			</span>
 		</button>
+
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav  mb-2 mb-lg-0">
 				<li class="nav-item" *ngFor="let link of links;index as i" [@fadeIn]>
@@ -26,5 +30,28 @@
 				</li>
 			</ul>
 		</div>
+	</div>
+
+
+
+	<div class="side-menu" [ngClass]="{'open-side-menu':changeIcon}" (click)="toggleIcon()">
+
+		<ul>
+			<li class="nav-item" [routerLink]="[link.path]" *ngFor="let link of links;index as i"
+				[ngClass]="{'active-link-ms':router.url.includes(link.path)}" [@fadeIn]>
+				<a class="nav-link-ms"> {{link.title }} </a>
+			</li>
+
+			<li class="nav-item">
+				<div class="lang-toggler">
+					<div class="lang-item" [ngClass]="{'active-lang':currentLang === lang.title}" [title]="lang.alt"
+						*ngFor="let lang of langFlags;index as i" (click)="selectLang(lang.title)" [@fadeIn]>
+						<div class="flag-icon"> <img [src]="lang.icon" alt="flag"> </div>
+						<span> {{lang.title}} </span>
+					</div>
+				</div>
+			</li>
+		</ul>
+
 	</div>
 </nav>

@@ -420,6 +420,26 @@ $animationSpeed: 55s;
 }
 
 @media (max-width: 900px) {
+  .services-section {
+    .brdr-left {
+      height: 70%;
+      width: 2px;
+      background-color: #000;
+      position: absolute;
+      left: -10px;
+      top: 0;
+    }
+
+    .card {
+      margin-bottom: 30px;
+
+      .illust-holder {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2vh;
+      }
+    }
+  }
 }
 @media (max-width: 770px) {
   .landing-section {
@@ -437,28 +457,6 @@ $animationSpeed: 55s;
       .desc {
         font-size: 1.3rem;
         line-height: 2rem;
-      }
-    }
-  }
-
-  .services-section {
-    .brdr-left {
-      height: 70%;
-      width: 2px;
-      background-color: #000;
-      position: absolute;
-      left: -10px;
-      top: 0;
-    }
-
-    .card {
-      margin-bottom: 30px;
-      align-items: baseline !important;
-
-      .illust-holder {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 2vh;
       }
     }
   }
