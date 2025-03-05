@@ -23,11 +23,13 @@ body {
   letter-spacing: 1px;
 }
 
-* img::selection {
+* img::selection,
+* video::selection {
   background-color: transparent !important;
 }
 
-* img {
+* img , 
+* video{
   user-drag: none !important;
   user-select: none !important;
   -moz-user-select: none !important;
