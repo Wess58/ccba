@@ -26,8 +26,8 @@
 	</div>
 
 	<div class="services-listing-section section-styling">
-		<div class="row mx-0" [id]="service.sectionTitle"
-			[ngClass]="{'flex-row-reverse': i%2}" *ngFor="let service of content.services;index as i" [@fadeIn]>
+		<div class="row mx-0" [id]="service.sectionTitle" [ngClass]="{'flex-md-row-reverse': i%2}"
+			*ngFor="let service of content.services;index as i" [@fadeIn]>
 			<div class="col-md-6" style="background-color: #111;">
 				<div class="content">
 

@@ -54,7 +54,7 @@ export class NavbarComponent implements OnInit {
       this.showNavbarOnScroll = true;
     }
 
-    this.morphNavbar = (window.pageYOffset / window.innerHeight * 100) > 40;
+    this.morphNavbar = window.innerWidth > 770 ? (window.pageYOffset / window.innerHeight * 100) > 40 : true;
   }
 
   constructor(

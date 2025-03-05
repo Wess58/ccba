@@ -86,3 +86,49 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 900px) {
+}
+@media (max-width: 770px) {
+  .landing-section {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .service-icons {
+    .card {
+      margin-bottom: 5vh;
+
+      .icon-holder {
+        margin-bottom: 3vh;
+      }
+
+      .title {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .vision {
+    padding: 7vh 0;
+
+    .title {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      max-width: 80%;
+      text-align: justify;
+    }
+  }
+
+  .services-listing-section {
+    .row {
+      border-bottom: none !important;
+    }
+
+    video {
+      min-height: auto;
+      height: 200px;
+    }
+  }
+}
