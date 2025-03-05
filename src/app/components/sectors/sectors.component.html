@@ -38,7 +38,7 @@
 				</div>
 			</div>
 			<div class="col-md-12 col-lg-6 position-relative p-0">
-				<video autoplay muted loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
+				<video autoplay muted controls playsinline loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
 					id="myVideo-{{i+1}}" [poster]="service.posterUrl">
 					<source [src]="service.videoUrl" type="video/mp4">
 				</video>

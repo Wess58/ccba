@@ -3,7 +3,7 @@
 	<div class="landing-section">
 
 		<div class="wrapper">
-			<video autoplay muted loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
+			<video autoplay autoplay muted controls playsinline loop #video (canplay)="video.play()" (loadedmetadata)="video.muted = true"
 				id="myVideo" poster="assets/images/landing-section-poster.jpg">
 				<source src="assets/videos/landing-section.mp4" type="video/mp4">
 			</video>
@@ -118,7 +118,7 @@
 	<!-- WHY US SECTION  -->
 	<div class="why-us-section section-styling">
 		<div class="wrapper">
-			<video autoplay muted loop #wuvideo (canplay)="wuvideo.play()" (loadedmetadata)="wuvideo.muted = true"
+			<video autoplay muted controls playsinline loop #wuvideo (canplay)="wuvideo.play()" (loadedmetadata)="wuvideo.muted = true"
 				id="myVideo" poster="assets/images/why-us-poster.jpg">
 				<source src="assets/videos/why-us.mp4" type="video/mp4">
 			</video>
