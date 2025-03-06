@@ -69,17 +69,24 @@
     }
   }
 
+  .wrapper {
+    min-width: 100%;
+    min-height: 70vh;
+    height: 100%;
+  }
   .wrapper::after {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // min-width: 100%;
-    // height: 900px;
-    // content: "";
-    // background: linear-gradient(to top, #0009 70%, #0007);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(to top, #000 70%, #0007);
   }
 
   video {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
     width: 100%;
     min-height: 70vh;
     height: 100%;
@@ -116,6 +123,12 @@
   .services-listing-section {
     .row {
       border-bottom: none !important;
+    }
+
+    .wrapper {
+      min-width: 100%;
+      min-height: auto;
+      height: 300px;
     }
 
     video {
