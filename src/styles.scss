@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/css/font-montserrat.css";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-// DEV 
+// DEV
 // ng build --base-href https://wess58.github.io/ccba/ --output-path docs/ && mv docs/browser/* docs/ && rm -rf docs/browser && git add . && git commit -m "docs ready for deployment" && git push
 // PROD
 // ng build &&  mv dist/browser/* dist/ && rm -rf dist/browser
@@ -31,14 +31,20 @@ body {
   background-color: transparent !important;
 }
 
-* img , 
-* video{
+* img,
+* video {
   user-drag: none !important;
   user-select: none !important;
   -moz-user-select: none !important;
   -webkit-user-drag: none !important;
   -webkit-user-select: none !important;
   -ms-user-select: none !important;
+  pointer-events: none !important;
+}
+
+* video::-webkit-media-controls-panel {
+  // display: none !important;
+  // opacity: 0!important;
 }
 
 * .btn,
@@ -203,6 +209,7 @@ label {
   }
 
   .bg-image {
+    background-color: var(--app-primary);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;

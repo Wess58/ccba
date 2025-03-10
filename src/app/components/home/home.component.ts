@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit {
   content: any = contentEN;
   currentLang = 'EN';
 
-  @ViewChild('video') landingVideo!:ElementRef; 
-  @ViewChild('wuvideo') wuVideo!: ElementRef; 
+  @ViewChild('video') landingVideo!: ElementRef;
+  @ViewChild('wuvideo') wuVideo!: ElementRef;
 
 
   constructor(
@@ -43,12 +43,20 @@ export class HomeComponent implements OnInit {
 
   }
 
-  ngAfterViewInit():void{
-    this.landingVideo.nativeElement.play();
-    this.landingVideo.nativeElement.muted = true;
+  ngAfterViewInit(): void {
 
-    this.wuVideo.nativeElement.play();
-    this.wuVideo.nativeElement.muted = true;
+    setTimeout(() => {
+      if (this.landingVideo) {
+        this.landingVideo.nativeElement.play();
+        this.landingVideo.nativeElement.muted = true;
+      }
+
+      if (this.wuVideo) {
+        this.wuVideo.nativeElement.play();
+        this.wuVideo.nativeElement.muted = true;
+      }
+
+    }, 100);
 
     // (canplay) = "video.play()"(loadedmetadata) = "video.muted = true"
   }
