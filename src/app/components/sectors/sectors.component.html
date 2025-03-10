@@ -39,7 +39,7 @@
 			</div>
 			<div class="col-md-12 col-lg-6 position-relative p-0">
 				<div class="wrapper">
-					<video autoplay muted playsinline loop #video (canplay)="video.play()"
+					<video autoplay muted playsinline loop preload="none" #video (canplay)="video.play()"
 						(loadedmetadata)="video.muted = true" id="myVideo-{{i+1}}" [poster]="service.posterUrl">
 						<source [src]="service.videoUrl" type="video/mp4">
 					</video>

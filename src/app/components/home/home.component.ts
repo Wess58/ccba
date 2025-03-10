@@ -24,7 +24,8 @@ export class HomeComponent implements OnInit {
   content: any = contentEN;
   currentLang = 'EN';
 
-  @ViewChild('video') elementRef!:ElementRef; 
+  @ViewChild('video') landingVideo!:ElementRef; 
+  @ViewChild('wuVideo') wuVideo!: ElementRef; 
 
 
   constructor(
@@ -43,8 +44,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngAfterViewInit():void{
-    this.elementRef.nativeElement.play();
-    this.elementRef.nativeElement.muted = true;
+    this.landingVideo.nativeElement.play();
+    this.landingVideo.nativeElement.muted = true;
+
+    this.wuVideo.nativeElement.play();
+    this.wuVideo.nativeElement.muted = true;
 
     // (canplay) = "video.play()"(loadedmetadata) = "video.muted = true"
   }

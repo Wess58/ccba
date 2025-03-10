@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -23,6 +23,7 @@ export class SectorsComponent implements OnInit {
 
   content: any = contentEN;
   currentLang = 'EN';
+
 
   constructor(
     private activatedRoute: ActivatedRoute,
