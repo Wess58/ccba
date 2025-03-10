@@ -40,6 +40,10 @@ body {
   -webkit-user-select: none !important;
   -ms-user-select: none !important;
   pointer-events: none !important;
+
+  // &:not([src]) {
+  //   visibility: hidden;
+  // }
 }
 
 * video::-webkit-media-controls-panel {
