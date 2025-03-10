@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   currentLang = 'EN';
 
   @ViewChild('video') landingVideo!:ElementRef; 
-  @ViewChild('wuVideo') wuVideo!: ElementRef; 
+  @ViewChild('wuvideo') wuVideo!: ElementRef; 
 
 
   constructor(
