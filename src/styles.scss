@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/css/font-montserrat.css";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+// DEV 
 // ng build --base-href https://wess58.github.io/ccba/ --output-path docs/ && mv docs/browser/* docs/ && rm -rf docs/browser && git add . && git commit -m "docs ready for deployment" && git push
+// PROD
+// ng build &&  mv dist/browser/* dist/ && rm -rf dist/browser
 
 :root {
   --app-primary: rgb(139, 0, 0);
