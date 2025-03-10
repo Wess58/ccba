@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -24,6 +24,9 @@ export class HomeComponent implements OnInit {
   content: any = contentEN;
   currentLang = 'EN';
 
+  @ViewChild('video') elementRef!:ElementRef; 
+
+
   constructor(
     private activatedRoute: ActivatedRoute,
     public router: Router,
@@ -37,6 +40,13 @@ export class HomeComponent implements OnInit {
     this.currentLang = localStorage.getItem('lang') ?? 'EN';
     this.content = this.currentLang === 'EN' ? contentEN : contentFR;
 
+  }
+
+  ngAfterViewInit():void{
+    this.elementRef.nativeElement.play();
+    this.elementRef.nativeElement.muted = true;
+
+    // (canplay) = "video.play()"(loadedmetadata) = "video.muted = true"
   }
 
   checkIfRouteIsEmpty(): void {
