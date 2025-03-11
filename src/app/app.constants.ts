@@ -7,8 +7,8 @@ export const PATHS: string[] = ["/home", "/sectors", "/contact"];
 export const EN_FOOTER = [
 	{
 		iconUrl: 'assets/images/congo-flag.svg',
-		address: 'No. 8 Hyperpsaro, Lubumbashi <br> Democratic Rep.of Congo',
-		phone: '+243 882 779 447'
+		address: '144 Avenue Sokele, Quarter Biashara, <br> C / Dilala, Kolwezi <br> Democratic Republic of Congo',
+		phone: '+243 812 380 845'
 	},
 	{
 		iconUrl: 'assets/images/sa-flag.svg',
@@ -25,8 +25,8 @@ export const EN_FOOTER = [
 export const FR_FOOTER = [
 	{
 		iconUrl: 'assets/images/congo-flag.svg',
-		address: 'N°8 Hyperpsaro, Lubumbashi <br> République Démocratique du Congo',
-		phone: '+243 882 779 447'
+		address: '144 Avenue Sokele, Quarter Biashara, <br> C / Dilala, Kolwezi <br> Democratic Republic of Congo',
+		phone: '+243 812 380 845'
 	},
 	{
 		iconUrl: 'assets/images/sa-flag.svg',
